@@ -1,0 +1,36 @@
+.footerBorder {
+  background-image: url("./images/Footer.png");
+  background-repeat: repeat-x;
+  height: 46px;
+}
+
+.container {
+  background-color: #32060c;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.copyContainer,
+.socialContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+}
+
+.socialContainer a {
+  margin: 0 5px;
+}
+
+.copyLabel {
+  color: #ffb8c9;
+}
+
+.mailTo {
+  color: #14b795;
+  text-decoration: none;
+}

@@ -1,0 +1,55 @@
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 50px 0 50px;
+}
+
+.navLink {
+  background-image: url("./images/big-mid.png");
+  height: 57px;
+  padding-top: 20px;
+  margin: 0 20px;
+  color: green;
+  position: relative;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.navLink::before,
+.navLink::after {
+  width: 15px;
+  height: 57px;
+  content: " ";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.navLink::before {
+  background-image: url("./images/big-left.png");
+  left: -15px;
+  top: 0;
+}
+
+.navLink::after {
+  background-image: url("./images/big-right.png");
+  right: -15px;
+  top: 0;
+}
+
+.navLink:hover,
+.navLinkSelected {
+  color: red;
+  background-image: url("./images/small-mid.png");
+}
+
+.navLink:hover::before,
+.navLinkSelected:before {
+  background-image: url("./images/small-left.png");
+}
+
+.navLink:hover::after,
+.navLinkSelected:after {
+  background-image: url("./images/small-right.png");
+}
