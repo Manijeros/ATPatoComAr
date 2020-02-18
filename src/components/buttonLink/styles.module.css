@@ -1,0 +1,49 @@
+.buttonLink {
+  background-image: url("./images/big-mid.png");
+  height: 57px;
+  padding-top: 20px;
+  margin: 0 20px;
+  color: green;
+  display: inline-block;
+  position: relative;
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+
+.buttonLink::before,
+.buttonLink::after {
+  width: 15px;
+  height: 57px;
+  content: " ";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.buttonLink::before {
+  background-image: url("./images/big-left.png");
+  left: -15px;
+  top: 0;
+}
+
+.buttonLink::after {
+  background-image: url("./images/big-right.png");
+  right: -15px;
+  top: 0;
+}
+
+.buttonLink:hover,
+.buttonLinkSelected {
+  color: red;
+  background-image: url("./images/small-mid.png");
+}
+
+.buttonLink:hover::before,
+.buttonLinkSelected:before {
+  background-image: url("./images/small-left.png");
+}
+
+.buttonLink:hover::after,
+.buttonLinkSelected:after {
+  background-image: url("./images/small-right.png");
+}
