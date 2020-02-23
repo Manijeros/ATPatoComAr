@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ButtonLink from "../components/buttonLink"
+import Panel from "../components/panel"
 
 const IndexPage = () => (
   <Layout>
@@ -19,8 +20,8 @@ const IndexPage = () => (
           <a href="https://store.steampowered.com/app/312530/Duck_Game/">
             Duck Game
           </a>
-          que en un estado de emoción violenta decidimos llevar la manija al
-          siguiente nivel y organizar torneos presenciales para juntarnos,
+          &nbsp;que en un estado de emoción violenta decidimos llevar la manija
+          al siguiente nivel y organizar torneos presenciales para juntarnos,
           levantar un poco el nivel competitivo y sobre todo divertirnos jugando
           al PATO
         </p>
@@ -34,6 +35,23 @@ const IndexPage = () => (
           label="Registrate!"
           to="https://www.meetup.com/ATPato-Torneos-de-Duck-Game-en-BA/"
         />
+      </section>
+      <section id="nextTournament">
+        <Panel>
+          <h3>Próximo Torneo</h3>
+          <h4>ATPato 250 Open Febrero 2020</h4>
+          <p>
+            <strong>Fecha:</strong> 29 de Febrero 2020 - 19hs
+          </p>
+          <p>
+            <strong>Lugar:</strong>{" "}
+            <a href="https://goo.gl/maps/BSbDWydUZuNPekXV7">SCVSoft</a>
+          </p>
+          <ButtonLink
+            label="Inscribite!"
+            to="https://www.meetup.com/ATPato-Torneos-de-Duck-Game-en-BA/"
+          />
+        </Panel>
       </section>
     </main>
   </Layout>

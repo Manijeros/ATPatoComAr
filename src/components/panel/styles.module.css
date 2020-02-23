@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+}
+
+.main {
+  background-color: #1b2632;
+}
+
+.top,
+.bottom {
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 20px;
+}
+
+.top {
+  background-image: url("./images/top.png");
+}
+
+.bottom {
+  background-image: url("./images/bottom.png");
+}
+
+.top::before,
+.top::after,
+.bottom::before,
+.bottom::after {
+  position: absolute;
+  content: " ";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  z-index: 1000;
+}
+
+.top::before {
+  left: -20px;
+  background-image: url("./images/top-left.png");
+}
+
+.top::after {
+  right: -20px;
+  background-image: url("./images/top-right.png");
+}
+
+.bottom::before {
+  left: -20px;
+  background-image: url("./images/bottom-left.png");
+}
+
+.bottom::after {
+  right: -20px;
+  background-image: url("./images/bottom-right.png");
+}
+
+.main::before,
+.main::after {
+  width: 20px;
+  height: calc(100% - 20px);
+  content: " ";
+  position: absolute;
+  background-repeat: repeat-y;
+  top: 10px;
+}
+
+.main::before {
+  background-image: url("./images/left.png");
+  left: -19px;
+}
+
+.main::after {
+  background-image: url("./images/right.png");
+  right: -20px;
+}
