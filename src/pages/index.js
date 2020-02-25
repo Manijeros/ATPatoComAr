@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ButtonLink from "../components/buttonLink"
 import Panel from "../components/panel"
+import Separator from "../components/separator"
 
 const IndexPage = () => (
   <Layout>
@@ -53,6 +54,7 @@ const IndexPage = () => (
           />
         </Panel>
       </section>
+      <Separator />
     </main>
   </Layout>
 )
