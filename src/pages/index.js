@@ -54,8 +54,25 @@ const IndexPage = () => (
           />
         </Panel>
       </section>
-      <Separator />
     </main>
+    <Separator />
+    <section>
+      <h2>Sponsors</h2>
+      <Panel>
+        <p>SCVSoft</p>
+        <p>Host + IT Partner</p>
+      </Panel>
+      <p>
+        <strong>Cómo puedo ser sponsor?</strong> Se puede ser sponsor siendo
+        host de uno de los torneos, aportando el lugar y la comida/bebida para
+        los participantes. También se puede aportar algún premio para motivar a
+        nuestros jugadores a ganar algún determinado torneo
+      </p>
+      <p>
+        Y estamos abiertos a otras sugerencias! Si querés ser sponsor,{" "}
+        <a href="mailto: atppato@scvsoft.com">contactanos acá</a>
+      </p>
+    </section>
   </Layout>
 )
 
