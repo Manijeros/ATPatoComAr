@@ -28,13 +28,13 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      <main
         style={{
           margin: `0 auto`,
         }}
       >
-        <main>{children}</main>
-      </div>
+        {children}
+      </main>
       <Footer />
     </>
   )

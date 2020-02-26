@@ -5,11 +5,12 @@ import SEO from "../components/seo"
 import ButtonLink from "../components/buttonLink"
 import Panel from "../components/panel"
 import Separator from "../components/separator"
+import MultiColumn from "../components/multiColumn"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <main>
+    <MultiColumn>
       <section id="info">
         <h2>Qué es la ATPato?</h2>
         <p>
@@ -50,7 +51,7 @@ const IndexPage = () => (
           />
         </Panel>
       </section>
-    </main>
+    </MultiColumn>
     <Separator />
     <section>
       <h2>Sponsors</h2>

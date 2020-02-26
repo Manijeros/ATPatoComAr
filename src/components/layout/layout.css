@@ -22,6 +22,11 @@ section,
 summary {
   display: block;
 }
+
+section {
+  margin: 30px;
+}
+
 audio,
 canvas,
 progress,
