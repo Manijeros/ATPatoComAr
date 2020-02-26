@@ -3,10 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ButtonLink from "../components/buttonLink"
-import Panel from "../components/panel"
 import Separator from "../components/separator"
 import MultiColumn from "../components/multiColumn"
 import NextTournament from "../components/nextTournament"
+import SponsorBadge from "../components/sponsorBadge"
 
 const IndexPage = () => (
   <Layout>
@@ -40,20 +40,22 @@ const IndexPage = () => (
     <Separator />
     <section>
       <h2>Sponsors</h2>
-      <Panel>
-        <p>SCVSoft</p>
-        <p>Host + IT Partner</p>
-      </Panel>
-      <p>
-        <strong>Cómo puedo ser sponsor?</strong> Se puede ser sponsor siendo
-        host de uno de los torneos, aportando el lugar y la comida/bebida para
-        los participantes. También se puede aportar algún premio para motivar a
-        nuestros jugadores a ganar algún determinado torneo
-      </p>
-      <p>
-        Y estamos abiertos a otras sugerencias! Si querés ser sponsor,{" "}
-        <a href="mailto: atppato@scvsoft.com">contactanos acá</a>
-      </p>
+      <MultiColumn>
+        <SponsorBadge />
+
+        <section>
+          <p>
+            <strong>Cómo puedo ser sponsor?</strong> Se puede ser sponsor siendo
+            host de uno de los torneos, aportando el lugar y la comida/bebida
+            para los participantes. También se puede aportar algún premio para
+            motivar a nuestros jugadores a ganar algún determinado torneo
+          </p>
+          <p>
+            Y estamos abiertos a otras sugerencias! Si querés ser sponsor,{" "}
+            <a href="mailto: atppato@scvsoft.com">contactanos acá</a>
+          </p>
+        </section>
+      </MultiColumn>
     </section>
   </Layout>
 )

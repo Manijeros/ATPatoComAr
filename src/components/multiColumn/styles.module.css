@@ -3,6 +3,6 @@
   flex-direction: row;
 }
 
-.container section {
+.container > * {
   flex: 1;
 }
