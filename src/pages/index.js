@@ -6,6 +6,7 @@ import ButtonLink from "../components/buttonLink"
 import Panel from "../components/panel"
 import Separator from "../components/separator"
 import MultiColumn from "../components/multiColumn"
+import NextTournament from "../components/nextTournament"
 
 const IndexPage = () => (
   <Layout>
@@ -34,23 +35,7 @@ const IndexPage = () => (
           to="https://www.meetup.com/ATPato-Torneos-de-Duck-Game-en-BA/"
         />
       </section>
-      <section id="nextTournament">
-        <Panel>
-          <h3>Próximo Torneo</h3>
-          <h4>ATPato 250 Open Febrero 2020</h4>
-          <p>
-            <strong>Fecha:</strong> 29 de Febrero 2020 - 19hs
-          </p>
-          <p>
-            <strong>Lugar:</strong>{" "}
-            <a href="https://goo.gl/maps/BSbDWydUZuNPekXV7">SCVSoft</a>
-          </p>
-          <ButtonLink
-            label="Inscribite!"
-            to="https://www.meetup.com/ATPato-Torneos-de-Duck-Game-en-BA/"
-          />
-        </Panel>
-      </section>
+      <NextTournament />
     </MultiColumn>
     <Separator />
     <section>

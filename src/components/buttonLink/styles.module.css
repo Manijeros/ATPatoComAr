@@ -6,7 +6,7 @@
   height: 57px;
   padding: 24px 5px 0 5px;
   margin: 0 20px;
-  color: green;
+  color: #14b795;
   display: inline-block;
   position: relative;
   background-repeat: repeat-x;
@@ -37,7 +37,7 @@
 
 .buttonLink:hover,
 .buttonLinkSelected {
-  color: red;
+  color: #ff1744;
   background-image: url("./images/small-mid.png");
 }
 

@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+}
+
+.tournamentImage {
+  width: calc(100% + 18px);
+  z-index: 9000;
+  margin-left: -8px;
+  margin-top: -8px;
+  border-radius: 5px 5px 0 0;
+}
+
+.inset {
+  padding: 30px;
+}
+
+.newsduckImage {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
