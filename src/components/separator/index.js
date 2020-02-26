@@ -15,10 +15,6 @@ const Separator = ({ src }) => {
     }
   `)
 
-  return (
-    <Img fluid={data.separatorImage.childImageSharp.fluid}>
-      <span>allala</span>
-    </Img>
-  )
+  return <Img fluid={data.separatorImage.childImageSharp.fluid} />
 }
 export default Separator

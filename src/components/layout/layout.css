@@ -202,6 +202,20 @@ img {
   padding-top: 0;
   margin-bottom: 1.45rem;
 }
+
+h1,
+h2,
+h3 {
+  text-shadow: 1px 1px 0 #3a1f89, -1px 1px 0 #3a1f89, 1px -1px 0 #3a1f89,
+    -1px -1px 0 #3a1f89, 0px 1px 0 #3a1f89, 0px -1px 0 #3a1f89,
+    -1px 0px 0 #3a1f89, 1px 0px 0 #3a1f89, 2px 2px 0 #3a1f89, -2px 2px 0 #3a1f89,
+    2px -2px 0 #3a1f89, -2px -2px 0 #3a1f89, 0px 2px 0 #3a1f89,
+    0px -2px 0 #3a1f89, -2px 0px 0 #3a1f89, 2px 0px 0 #3a1f89, 1px 2px 0 #3a1f89,
+    -1px 2px 0 #3a1f89, 1px -2px 0 #3a1f89, -1px -2px 0 #3a1f89,
+    2px 1px 0 #3a1f89, -2px 1px 0 #3a1f89, 2px -1px 0 #3a1f89,
+    -2px -1px 0 #3a1f89;
+}
+
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -211,10 +225,11 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #b388ff;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
+
 h2 {
   margin-left: 0;
   margin-right: 0;
@@ -224,10 +239,11 @@ h2 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #b388ff;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
+
 h3 {
   margin-left: 0;
   margin-right: 0;
@@ -237,7 +253,7 @@ h3 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #b388ff;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
@@ -250,7 +266,7 @@ h4 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #b388ff;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
@@ -263,7 +279,7 @@ h5 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #b388ff;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }
@@ -276,7 +292,7 @@ h6 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
+  color: #b388ff;
   text-rendering: optimizeLegibility;
   line-height: 1.1;
 }

@@ -9,10 +9,6 @@ import Separator from "../components/separator"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <header>
-      <h1>ATPATO</h1>
-      <h2>Torneos presenciales de Duck Game en Buenos Aires</h2>
-    </header>
     <main>
       <section id="info">
         <h2>Qué es la ATPato?</h2>
