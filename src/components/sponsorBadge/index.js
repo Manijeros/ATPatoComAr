@@ -8,7 +8,7 @@ const SponsorBadge = () => (
   <div>
     <Panel>
       <div className={styles.container}>
-        <img className={styles.logo} src={Logo} />
+        <img className={styles.logo} src={Logo} alt="SCVSoft" />
         <div className={styles.label}>Host + IT Partner</div>
       </div>
     </Panel>
