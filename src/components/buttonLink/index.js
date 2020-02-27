@@ -6,7 +6,6 @@ import styles from "./styles.module.css"
 
 const ButtonLink = ({ label, to, selected }) => {
   const isExternal = to.match(/(http|mailto|https):\/\//)
-  console.log(isExternal)
   return isExternal ? (
     <a href={to} className={styles.buttonLink}>
       {label}
