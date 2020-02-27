@@ -4,14 +4,23 @@ import React from "react"
 
 import styles from "./styles.module.css"
 
-const ButtonLink = ({ label, to, selected }) => (
-  <Link
-    className={`${styles.buttonLink} ${selected && styles.buttonLinkSelected}`}
-    to={to}
-  >
-    {label}
-  </Link>
-)
+const ButtonLink = ({ label, to, selected }) => {
+  const isExternal = to.match(/(http|mailto|https):\/\//)
+  console.log(isExternal)
+  return isExternal ? (
+    <a href={to} className={styles.buttonLink}>
+      {label}
+    </a>
+  ) : (
+    <Link
+      className={`${styles.buttonLink} ${selected &&
+        styles.buttonLinkSelected}`}
+      to={to}
+    >
+      {label}
+    </Link>
+  )
+}
 
 ButtonLink.propTypes = {
   label: PropTypes.string,
