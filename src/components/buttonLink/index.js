@@ -4,7 +4,7 @@ import React from "react"
 
 import styles from "./styles.module.css"
 
-const ButtonLink = ({ label, to, selected }) => {
+const ButtonLink = ({ label, to, getProps }) => {
   const isExternal = to.match(/(http|mailto|https):\/\//)
   return isExternal ? (
     <a href={to} className={styles.buttonLink}>
@@ -12,8 +12,8 @@ const ButtonLink = ({ label, to, selected }) => {
     </a>
   ) : (
     <Link
-      className={`${styles.buttonLink} ${selected &&
-        styles.buttonLinkSelected}`}
+      className={styles.buttonLink}
+      activeClassName={styles.buttonLinkSelected}
       to={to}
     >
       {label}

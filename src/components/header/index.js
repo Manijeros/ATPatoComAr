@@ -6,25 +6,28 @@ import ButtonLink from "../buttonLink"
 import Logo from "./images/logo.inline.svg"
 import styles from "./styles.module.css"
 
-const Header = ({ siteTitle }) => (
-  <header className={styles.headerHero}>
+const Header = ({ title, bigHero }) => (
+  <header className={bigHero ? styles.headerHero : styles.regularHeader}>
     <nav className={styles.navBar}>
-      <ButtonLink to="/" label="Inicio" selected />
+      <ButtonLink to="/" label="Inicio" />
       <ButtonLink to="/reglamento" label="Reglamento" />
       <ButtonLink to="/rankings" label="Rankings" />
     </nav>
-    <Logo className={styles.logo} />
-    <h1 className={styles.title}>Torneos presenciales de</h1>
-    <h1>Duck Game en Buenos Aires</h1>
+    <Logo className={bigHero ? styles.logo : styles.logoSmall} />
+    {bigHero && <h1 className={styles.title}>Torneos presenciales de</h1>}
+    {bigHero && <h1>Duck Game en Buenos Aires</h1>}
+    {!bigHero && <h1>{title}</h1>}
   </header>
 )
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  title: PropTypes.string,
+  bigHero: PropTypes.bool,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  title: ``,
+  bigHero: false,
 }
 
 export default Header

@@ -1,0 +1,21 @@
+.container {
+  padding: 16px 20px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+.list li {
+  display: table-row;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+}
+
+.list li * {
+  display: table-cell;
+  padding-right: 20px;
+}
