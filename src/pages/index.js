@@ -1,7 +1,6 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import ButtonLink from "../components/buttonLink"
 import Separator from "../components/separator"
 import MultiColumn from "../components/multiColumn"
@@ -9,8 +8,7 @@ import NextTournament from "../components/nextTournament"
 import SponsorBadge from "../components/sponsorBadge"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
+  <Layout isHomePage>
     <MultiColumn>
       <section id="info">
         <h2>Qué es la ATPato?</h2>

@@ -7,41 +7,37 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
+import SEO from "../seo"
 import Header from "../header"
 import Footer from "../footer"
 
 import "./layout.css"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
-  return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <main
-        style={{
-          margin: `0 auto`,
-        }}
-      >
-        {children}
-      </main>
-      <Footer />
-    </>
-  )
-}
+const Layout = ({ children, isHomePage, title }) => (
+  <>
+    <SEO title={title} />
+    <Header title={title} bigHero={isHomePage} />
+    <main
+      style={{
+        margin: `0 auto`,
+      }}
+    >
+      {children}
+    </main>
+    <Footer />
+  </>
+)
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  isHomePage: PropTypes.bool,
+  title: PropTypes.string,
+}
+
+Layout.defaultProps = {
+  isHomePage: false,
+  title: "Home",
 }
 
 export default Layout
