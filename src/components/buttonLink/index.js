@@ -4,7 +4,7 @@ import React from "react"
 
 import styles from "./styles.module.css"
 
-const ButtonLink = ({ label, to, getProps }) => {
+const ButtonLink = ({ label, to }) => {
   const isExternal = to.match(/(http|mailto|https):\/\//)
   return isExternal ? (
     <a href={to} className={styles.buttonLink}>
