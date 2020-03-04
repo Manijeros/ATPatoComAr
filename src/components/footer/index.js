@@ -1,8 +1,8 @@
 import React from "react"
 
-import ImageLink from "../ImageLink"
-import Meetup from "../../images/Meetup.png"
-import Youtube from "../../images/Youtube.png"
+import ImageLink from "components/ImageLink"
+import Meetup from "images/Meetup.png"
+import Youtube from "images/Youtube.png"
 
 import styles from "./styles.module.css"
 

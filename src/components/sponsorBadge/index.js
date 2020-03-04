@@ -1,6 +1,6 @@
 import React from "react"
-import Panel from "../panel"
 
+import Panel from "components/panel"
 import styles from "./styles.module.css"
 import Logo from "./SCVLogo.png"
 

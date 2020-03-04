@@ -2,8 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-import Panel from "../panel"
-import ButtonLink from "../buttonLink"
+import Panel from "components/panel"
+import ButtonLink from "components/buttonLink"
 
 import styles from "./styles.module.css"
 
