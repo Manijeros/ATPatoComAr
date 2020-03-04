@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
 
-import ButtonLink from "../buttonLink"
+import ButtonLink from "components/buttonLink"
 
 import Logo from "./images/logo.inline.svg"
 import styles from "./styles.module.css"

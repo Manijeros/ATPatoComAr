@@ -1,9 +1,9 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "components/layout"
 
-import MultiColumn from "../components/multiColumn"
-import TournamentTypes from "../components/tournamentTypes"
+import MultiColumn from "components/multiColumn"
+import TournamentTypes from "components/tournamentTypes"
 
 const Reglamento = () => (
   <Layout title="Reglamento">
