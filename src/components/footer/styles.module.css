@@ -6,6 +6,9 @@
 
 .container {
   background-color: #32060c;
+}
+
+.inner {
   height: 150px;
   display: flex;
   flex-direction: row;
